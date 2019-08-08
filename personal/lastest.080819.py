@@ -93,7 +93,7 @@ apply_discount(shoes,0.25)
     
 
 
-# In[17]:
+# In[134]:
 
 
 import numpy as np
@@ -125,13 +125,11 @@ mypeeps = pd.DataFrame(
                'pop':[3456,6765,9878],
                 'name':['Fred','Mike','Sam']})
 
-#mypeeps_f=mypeeps[mypeeps.name.isin(names) & mypeeps.year.isin(years)]
-mypeeps_f=mypeeps[~mypeeps.year.isin(years)]
-#mypeeps_f1=mypeeps_f[(mypeeps_f['pop'] > 5000)]
-#--mypeeps_f[(mypeeps_f['pop'] > 5000 | mypeeps_f['year'] == 1957)]
+mypeeps_f=mypeeps[mypeeps.name.isin(names) & mypeeps.year.isin(years)]
+mypeeps_f1=mypeeps_f[(mypeeps_f['pop'] > 5000)]
 
 
-print(mypeeps_f[['year','name','pop']])
+#print(mypeeps_f1[['year','name','pop']])
 
 #-------------joins in Python---------------------------------------
 df1 = pd.DataFrame({'employee': ['Bob', 'Jake', 'Lisa', 'Sue'],
