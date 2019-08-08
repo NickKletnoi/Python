@@ -204,13 +204,16 @@ print(df80)
 a = [1, 2, 3, 4, 5]
 b = [9, 8, 7, 6, 5]
 
-r1=returnMatches(a, b)
-r2=set(a).intersection(b)
-r3=set(a) & set(b)
+r2=set(a) & set(b)
+r3=set(a) - set(b)
+r4=set(a) | set(b)
+r5= [i for i in a if i in b]
+#--------------------------
+print(r2)
+print(r3)
+print(r4)
+print(r5)
 
-Print(r1)
-Print(r2)
-Print(r3)
 
 
                 
