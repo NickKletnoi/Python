@@ -200,6 +200,17 @@ print(df80)
 
 #Print(df90)
 
+#--- List comparisons ----
+a = [1, 2, 3, 4, 5]
+b = [9, 8, 7, 6, 5]
+
+r1=returnMatches(a, b)
+r2=set(a).intersection(b)
+r3=set(a) & set(b)
+
+Print(r1)
+Print(r2)
+Print(r3)
 
 
                 
